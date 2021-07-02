@@ -9,11 +9,12 @@ int main()
 {
     using namespace std;
     cout << "What is your fist name? ";
-    string first_name;
+    const int ArSize = 80;
+    char first_name[ArSize];
     cin.getline(first_name, 80);
     cout << "What is your last name? ";
     char last_name[80];
-    cin.get(last_name).get();
+    cin.get(last_name,80).get();
     cout << "What letter grade do you deserve? ";
     string grade;
     cin >> grade;
