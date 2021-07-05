@@ -102,6 +102,7 @@ int main()
     // problem 16
     // 中间如果出现空格，后面的将会丢弃
 
+    // problem 17
     const int N = 10;
     vector<string> str1(N);
     array<string, N> str2;

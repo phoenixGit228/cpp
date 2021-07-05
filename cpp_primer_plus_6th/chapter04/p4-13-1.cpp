@@ -11,18 +11,18 @@ int main()
     cout << "What is your fist name? ";
     const int ArSize = 80;
     char first_name[ArSize];
-    cin.getline(first_name, 80);
+    cin.getline(first_name, ArSize);
     cout << "What is your last name? ";
-    char last_name[80];
-    cin.get(last_name,80).get();
+    char last_name[ArSize];
+    cin.get(last_name,ArSize).get();
     cout << "What letter grade do you deserve? ";
-    string grade;
+    char grade;
     cin >> grade;
     cout << "What is your age? ";
     int age;
     cin >> age;
-    cout << "Name: " << last_name << " " << first_name << endl;
-    cout << "Grade: " << grade << endl;
+    cout << "Name: " << last_name << ", " << first_name << endl;
+    cout << "Grade: " << char(grade + 1) << endl;
     cout << "Age: " << age << endl;
 
     return 0;
