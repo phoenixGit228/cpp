@@ -46,7 +46,7 @@ int main()
     cout << "ideas[1] = " << ideas[1] << endl;
 
     // problem 6 , 这里推荐第一种，由初始化自动分配
-    char characters[] = "cheeseburger"; //传统C风格，字符数组，需带上数组长度
+    char characters[] = "cheeseburger";
     //char characters[20] = "cheeseburger"; //传统C风格，字符数组，需带上数组长度
 
     // problem 7
@@ -90,6 +90,7 @@ int main()
 
     // problem 14
     cout << (char *)"Home of the jolly bytes." << endl;
+    cout << (int *)"Home of the jolly bytes." << endl;
 
     // problem 15
     fishes *fish_a = new fishes;
@@ -101,6 +102,7 @@ int main()
 
     // problem 16
     // 中间如果出现空格，后面的将会丢弃
+    // cin.getline(address, 80);
 
     // problem 17
     const int N = 10;

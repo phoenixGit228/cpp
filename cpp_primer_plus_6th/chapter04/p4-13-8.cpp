@@ -14,20 +14,20 @@ struct pizza
 };
 int main(void)
 {
-    pizza pizza_info;
+    pizza * ppizza = new pizza;
     cout << "Please enter the corporation name: ";
-    getline(cin, pizza_info.corp);
-    // cin.get(pizza_info.corp, 80);
-    //类型是char数组，使用cin.get(变量名，数组长度) 或 cin.getline(变量名，数组长度);
-    //如果类型为string，使用getline(cin,变量名)
+    getline(cin, ppizza->corp);
     cout << "please enter diameter of the pizza: ";
-    cin >> pizza_info.diameter;
+    cin >> ppizza->diameter;
     cout << "Please enter weight of the pizza: ";
-    cin >> pizza_info.weight;
+    cin >> ppizza->weight;
+    // 指针变量需要使用“ -> ”成员运算符，而不是“. ”成员运算符
 
-    cout << "pizza corporation: " << pizza_info.corp << endl;
-    cout << "pizz diameter: " << pizza_info.diameter << endl;
-    cout << "pizza weight: " << pizza_info.weight << endl;
+    cout << "pizza corporation: " << ppizza->corp << endl;
+    cout << "pizz diameter: " << ppizza->diameter << endl;
+    cout << "pizza weight: " << ppizza->weight << endl;
+
+    delete ppizza;
 
     return 0;
 }

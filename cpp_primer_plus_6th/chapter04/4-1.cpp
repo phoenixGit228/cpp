@@ -44,7 +44,7 @@ int main(void)
 
     double earnings[4]{1.2e4, 1.6e4, 1.1e4, 1.7e4}; //C++11 初始化可省略=
 
-    unsigned int counts[10]{};      //C++11 所有元素将设置为0
+    unsigned int counts[10]{0};      //C++11 所有元素将设置为0
     for (int i = 0; i < 10;i++)     // 测试
     {
         cout << counts[i] << endl;
