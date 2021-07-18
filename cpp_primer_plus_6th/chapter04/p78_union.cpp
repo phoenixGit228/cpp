@@ -39,4 +39,5 @@ int main(void)
     cout << "pail.long_val: " << pail.long_val << endl;
     cout << "pail.double_val: " << pail.double_val << endl;
 
+    return 0;
 }
