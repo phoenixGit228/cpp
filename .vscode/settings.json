@@ -4,5 +4,6 @@
         "iostream": "cpp",
         "string": "cpp",
         "istream": "cpp"
-    }
+    },
+    "files.defaultLanguage": "cpp"
 }

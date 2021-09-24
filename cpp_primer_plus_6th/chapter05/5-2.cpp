@@ -7,9 +7,12 @@
 int main(void)
 {
     using namespace std;
-    cout << "Enter the starting countdown value: ";
-    unsigned int limit;
-    cin >> limit;
+    int limit;
+    do{
+        cout << "Enter the starting positive number: ";
+        cin >> limit;
+    }while (limit < 0);
+
     int i;
     for (i = limit; i; i--)  //quits when i is 0
         cout << "i = " << i << endl;
