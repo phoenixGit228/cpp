@@ -53,7 +53,7 @@ int main()
     }
 
     // 修改数组元素
-    for (double &x : prices)    // 修改数组元素
+    for (double &x : prices)    // 修改数组元素，引用变量
     {
         x = x *10;
     }
