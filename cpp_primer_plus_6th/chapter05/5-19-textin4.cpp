@@ -12,10 +12,11 @@ int main(void)
 
     // 当前程序接收到EOF后，还不能直接输出结果，需要改进
     // test for end-of-file，这里ch=cin.get() 可以替换成cin.get(ch)
+    cout << "Please input some characters to count the sum." << endl;
     while((ch = cin.get()) != EOF)  
     {
         cout.put(char(ch));     // 将int型转为char型
-        ++count;
+        count++;
     }
     cout << "字符数：" << count << endl;
     return 0;
