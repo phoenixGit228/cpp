@@ -16,6 +16,6 @@ int main()
         cout << "Sum = " << sum << endl;
     }
     cout << "Now, the sum is " << sum << endl;
-    
+    cout << "中国， 你好"<< endl;
     return 0;
 }
